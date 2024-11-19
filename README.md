@@ -33,6 +33,7 @@ Users should be able to:
 
 ### Links
 
+-   Solution URL: [https://github.com/Jojo25011990/blog-preview-card](https://github.com/Jojo25011990/blog-preview-card)
 -   Live site: [https://jojo25011990.github.io/blog-preview-card/](https://jojo25011990.github.io/blog-preview-card/)
 
 ## My process
