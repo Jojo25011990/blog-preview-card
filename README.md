@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Blog preview card screenshot](./Blog-Preview-Card.png)
+![Blog preview card screenshot](./screenshot.png)
 
 ### Links
 
