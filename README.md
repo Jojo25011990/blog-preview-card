@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Blog preview card screenshot](./Blog%20Preview%20Card.png)
+![Blog preview card screenshot](https://raw.githubusercontent.com/Jojo25011990/blog-preview-card/refs/heads/main/Blog%20Preview%20Card.png)
 
 ### Links
 
