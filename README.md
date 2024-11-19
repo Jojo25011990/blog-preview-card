@@ -27,6 +27,10 @@ Users should be able to:
 
 -   See hover and focus states for all interactive elements on the page
 
+### Screenshot
+
+![](./Blog%20Preview%20Card.png)
+
 ### Links
 
 -   Live site: [https://jojo25011990.github.io/blog-preview-card/](https://jojo25011990.github.io/blog-preview-card/)
