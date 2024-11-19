@@ -1,0 +1,158 @@
+@forward "./reset";
+@use "./abstract" as *;
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: $bg-color;
+
+	font-family: "Figtree", serif;
+
+	overflow: hidden;
+
+	@include flexbox($gap: null);
+}
+
+.heading__primary {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	z-index: 10;
+
+	color: $heading-color;
+	width: 100%;
+	text-align: center;
+
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	@include font-size(7rem, 700);
+
+	@include heading-shadow-text;
+
+	animation: fadeInAndOut 4.6s ease forwards;
+
+	@media (max-width: 700px) {
+		@include font-size(5rem, 700);
+	}
+
+	@media (max-width: 450px) {
+		@include font-size(4rem, 700);
+	}
+}
+
+.overlay__animation {
+	position: absolute;
+	width: 42rem;
+	height: 55rem;
+	background-color: $bg-color;
+
+	animation: moveDown 2s 5.5s linear forwards;
+}
+
+.card {
+	display: none;
+	width: 38.4rem;
+	height: 52.2rem;
+	background-color: #fff;
+	color: $color-dark;
+	margin: 0 auto;
+
+	padding: 2.4rem;
+
+	outline: 1px solid $color-black;
+	box-shadow: 0.8rem 0.8rem 0 $color-black;
+
+	cursor: pointer;
+
+	@include flexbox(column, space-between);
+	@include border-radius;
+
+	@media (max-width: 375px) {
+		width: 32.7rem;
+		height: 50.1rem;
+	}
+
+	&__background-image {
+		width: 100%;
+		// border-radius: 1rem; // Figma version - 10px
+
+		@include border-radius(1.2rem);
+		// My version - 12px better for me
+	}
+
+	&__content {
+		@include font-size(1.6rem);
+
+		@include flexbox(column, flex-start, flex-start);
+	}
+
+	&__category {
+		align-self: flex-start;
+		background-color: $bg-color;
+		// padding: 0.4rem 1.2rem; // Figma version - 4px / 12px
+		padding: 0.6rem 1.2rem; // My version - 6px / 12px better for me
+
+		@include font-size(1.4rem, 800);
+
+		@include border-radius(0.4rem);
+	}
+
+	&__date {
+		line-height: 1.8rem;
+		@include font-size(1.4rem);
+	}
+
+	&__title {
+		line-height: 3.6rem;
+		transition: color 0.25s ease-in;
+
+		@include font-size(2.4rem, 800);
+	}
+
+	&:hover .card__title {
+		color: $bg-color;
+	}
+
+	&__description {
+		color: $color-gray-light;
+		line-height: 2.4rem; // 150%
+		text-shadow: 0 0.4rem 0.4rem rgba($color: $color-black, $alpha: 0.25);
+
+		@include font-size($weight: 500);
+
+		@media (max-width: 37.5rem) {
+			text-shadow: none;
+		}
+	}
+
+	&__author {
+		@include flexbox;
+
+		margin-top: 1.2rem;
+
+		&-img {
+			width: 3.2rem;
+			height: 3.2rem;
+		}
+
+		&-name {
+			color: $color-dark;
+			@include font-size(1.4rem, 800);
+		}
+	}
+}
+
+// For Screen Readers Only
+
+.visually-hidden {
+	position: absolute;
+	width: 0.1rem;
+	height: 0.1rem;
+	margin: -0.1rem;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+	white-space: nowrap;
+	visibility: hidden;
+	z-index: -500;
+}
