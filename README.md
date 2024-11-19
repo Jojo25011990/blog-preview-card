@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
--   Live site: [https://jojo25011990.github.io/blog-preview-card/n](https://jojo25011990.github.io/blog-preview-card/)
+-   Live site: [https://jojo25011990.github.io/blog-preview-card/](https://jojo25011990.github.io/blog-preview-card/)
 
 ## My process
 
