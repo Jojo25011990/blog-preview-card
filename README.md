@@ -29,9 +29,7 @@ Users should be able to:
 
 ### Links
 
-    github odkaz
-
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Live site: [https://jojo25011990.github.io/blog-preview-card/n](https://jojo25011990.github.io/blog-preview-card/)
 
 ## My process
 
