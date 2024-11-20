@@ -25,16 +25,6 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<h1
-			class="heading__primary"
-			id="headingPrimary"
-			aria-label="Main heading for the Blog Preview Card"
-		>
-			Blog Preview Card
-		</h1>
-
-		<div class="overlay__animation"></div>
-
 		<div class="card">
 			<svg
 				class="card__background-image"
@@ -139,18 +129,10 @@
 
 				<p class="card__date">
 					Published
-					<time datetime="2023-12-21" aria-describedby="publishedDate"
-						>21 Dec 2023</time
-					>
+					<time datetime="2023-12-21">21 Dec 2023</time>
 				</p>
 
-				<h2
-					class="card__title"
-					data-title="HTML & CSS foundations"
-					aria-labelledby="headingPrimary"
-				>
-					HTML & CSS foundations
-				</h2>
+				<h2 class="card__title">HTML & CSS foundations</h2>
 
 				<p class="card__description">
 					These languages are the backbone of every website, defining
@@ -162,15 +144,11 @@
 						src="./assets/images/image-avatar.webp"
 						alt="Greg Hooper"
 						class="card__author-img"
-						aria-label="Profile picture of Greg Hooper"
 					/>
 					<span class="card__author-name">Greg Hooper</span>
 				</div>
 			</div>
 		</div>
-
-		<!-- For Screen Readers Only   -->
-		<span id="publishedDate" class="visually-hidden"> Published Date </span>
 
 		<div class="attribution" hidden>
 			Challenge by

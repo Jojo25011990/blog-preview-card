@@ -17,12 +17,6 @@
 	border-radius: $radius;
 }
 
-@mixin heading-shadow-text() {
-	text-shadow: 0.5rem 0.5rem 0.2rem rgb(209, 197, 21),
-		1rem 1rem 1rem rgba($color: #000000, $alpha: 0.25),
-		1.1rem 1.1rem 3.5rem rgba($color: #000000, $alpha: 0.25);
-}
-
 @mixin font-size($size: 1.6rem, $weight: normal) {
 	font-size: $size;
 	font-weight: $weight;
